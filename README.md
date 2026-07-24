@@ -1,116 +1,81 @@
-# 🎫 eMagiz Ticketing System
+# eMagiz Ticketing System
 
-A modern, role-based ticket management system that streamlines communication between customers and support teams. The platform enables efficient incident reporting, request tracking, collaboration, and complete auditability through a secure web application.
+## About the Project
 
----
+The eMagiz Ticketing System is a web application developed as part of a university Software Engineering project. Its purpose is to provide a simple platform where customers can submit support requests and track their progress, while support staff can manage and resolve them.
 
-# 📖 Overview
-
-The **eMagiz Ticketing System** was developed as a university Software Engineering project following **Agile Scrum** methodologies.
-
-The system provides a centralized platform where:
-
-- Customers can submit and track support requests.
-- Support Engineers manage and assign tickets.
-- Consultants resolve assigned issues.
-- Administrators oversee users, roles, and system activity.
-
-The application focuses on:
-
-- Secure authentication
-- Role-Based Access Control (RBAC)
-- RESTful API architecture
-- Audit logging
-- Responsive user interface
-- Scalable backend design
+The application follows a role-based access model, meaning that each type of user has different permissions and functionality within the system.
 
 ---
 
-# ✨ Features
+## Features
 
-## 👤 Customer
+### Customer
 
-- Create support tickets
+- Create new support tickets
 - View personal tickets
-- Track ticket status in real time
+- Track ticket status
 - Add comments to tickets
-- Receive updates from support staff
 
----
+### Support Engineer
 
-## 🛠 Support Engineer
-
+- View all tickets
 - Create customer accounts
-- View all submitted tickets
 - Assign tickets to consultants
-- Update ticket priority and status
-- Manage customer requests
-- Monitor ticket workflow
+- Change ticket priority and status
 
----
-
-## 💼 Consultant
+### Consultant
 
 - View assigned tickets
-- Communicate via ticket comments
+- Comment on tickets
 - Update ticket progress
-- Resolve assigned issues
+- Mark tickets as resolved
+
+### Administrator
+
+- Manage users
+- Manage roles
+- View audit logs
+- Access all system functionality
 
 ---
 
-## 👑 Administrator
+## Technologies Used
 
-- Full system access
-- User management
-- Role management
-- Access audit logs
-- Monitor overall system activity
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Bootstrap
-
-## Backend
+### Backend
 
 - Java
 - Jersey (JAX-RS)
-- RESTful APIs
+- Maven
+- REST API
 
-## Database
+### Frontend
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+### Database
 
 - PostgreSQL
 
-## Authentication & Security
-
-- Password Hashing
-- Role-Based Access Control (RBAC)
-- Session Authentication
-- Audit Logging
-
-## Development Tools
+### Tools
 
 - IntelliJ IDEA
-- Maven
 - Git
 - GitLab
 - Trello
 
 ---
 
-# 🏗 System Architecture
+## Project Structure
 
 ```text
 Frontend
     │
     ▼
-REST API (Jersey)
+REST API
     │
     ▼
 Business Logic
@@ -121,9 +86,9 @@ PostgreSQL Database
 
 ---
 
-# 🗄 Database Design
+## Database
 
-The system is built around the following core entities:
+The application uses the following main entities:
 
 - User
 - Customer
@@ -133,93 +98,70 @@ The system is built around the following core entities:
 - Comment
 - Audit Log
 
-### Database Design Principles
-
-- Data consistency
-- Referential integrity
-- Efficient querying
-- Complete action history
+The database was designed to maintain data integrity and keep a complete history of important user actions.
 
 ---
 
-# 🔐 Security
+## Security
 
-Security features implemented include:
+The application includes:
 
-- Secure password hashing
-- Role-Based Authorization
-- Protected REST API endpoints
-- Session authentication
+- User authentication
+- Password hashing
+- Role-Based Access Control (RBAC)
+- Protected API endpoints
 - Input validation
 - Audit logging
-- Authentication required for protected resources
 
 ---
 
-# ⚙ Agile Development
+## Agile Development
 
-The project was developed using **Agile Scrum** practices.
+The project was developed using Agile Scrum practices.
 
-### Scrum Activities
+During development we worked with:
 
+- User Stories
 - Sprint Planning
 - Daily Stand-ups
 - Sprint Reviews
 - Sprint Retrospectives
-
-### Project Management
-
-- User Stories
 - MoSCoW Prioritization
-- Trello Board
-- GitLab Version Control
+
+GitLab was used for version control and Trello for task management.
 
 ---
 
-# 📚 Learning Outcomes
+## What I Learned
 
-This project provided practical experience in:
+Working on this project helped me improve my understanding of:
 
-- RESTful API development
+- REST API development
 - Java backend development
-- Software architecture
-- PostgreSQL database design
-- Authentication & Authorization
-- Secure web application development
-- Agile Software Engineering
-- Git collaboration workflows
-- Full-stack application development
+- Database design with PostgreSQL
+- Authentication and authorization
+- Git and version control
+- Team collaboration
+- Agile software development
 
 ---
 
-# 🔑 Demo Login Credentials
+## Demo Accounts
 
 | Role | Username | Password |
 |------|----------|----------|
-| Support Engineer | `support` | `support123` |
-| Consultant | `consultant` | `consultant123` |
-| Customer | `customer` | `customer123` |
+| Support Engineer | support | support123 |
+| Consultant | consultant | consultant123 |
+| Customer | customer | customer123 |
 
 ---
 
-# 🧰 Project Tools
+## Status
 
-- GitLab
-- Trello
-- IntelliJ IDEA
-- Maven
-- PostgreSQL
+Completed
 
 ---
 
-# 📌 Project Status
+## Author
 
-✅ **Completed**
-
-Developed as part of a university Software Engineering course using Agile Scrum methodologies.
-
----
-
-# 👨‍💻 Author
-
-**Aleksandar Nikolov**
+Aleksandar Nikolov
